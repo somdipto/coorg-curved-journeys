@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Menu, X, MapPin, Star } from 'lucide-react';
+import { Menu, X, Star } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,9 +12,6 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-coorg-gradient rounded-2xl flex items-center justify-center">
-              <MapPin className="text-white w-5 h-5" />
-            </div>
             <div>
               <h1 className="font-playfair font-bold text-xl text-coorg-green">Nava Durga Travels</h1>
               <p className="text-xs text-gray-500">Discover Coorg</p>
